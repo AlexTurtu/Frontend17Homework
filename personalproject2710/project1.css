@@ -1,9 +1,14 @@
-#demo {
-  position: relative;
+#monster {
+  position: absolute;
+  opacity: 80%;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
 }
 #buttons {
-  position: fixed;
-  bottom: 4cm;
+  position: relative;
+  top: 15px;
+  left: 280px;
   background-color: rgb(15, 71, 17);
   width: 100px;
   border-radius: 50%;
@@ -30,6 +35,31 @@
 }
 #down {
   border-radius: 50%;
-  left: 1cm;
+  right: -40px;
   position: relative;
+  margin: 0, 0, 0, 0;
+}
+#demo1 {
+  position: relative;
+  right: 30ps;
+}
+#square {
+  border-style: solid;
+  width: 700px;
+  height: 450px;
+  top: 0cm;
+  left: 90px;
+  padding: 0%;
+  border-width: 100px;
+  border-top-color: blue;
+  border-left-color: rgb(182, 182, 243);
+  border-right-color: rgb(23, 23, 165);
+  border-bottom-color: rgb(51, 51, 182);
+  background-color: cadetblue;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sand.jpg/1024px-Sand.jpg");
+}
+#palm1 {
+  left: 200px;
+  position: relative;
+  top: 50px;
 }

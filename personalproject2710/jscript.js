@@ -1,22 +1,53 @@
-var i = 0;
+var i = 100;
+var j = 50;
+var selectArray = ["demo","demo1"];
 function mover() {
-    i = i + 10
-    document.getElementById("demo").style.left = i+"px";
-    document.getElementById("demo").style.right = i +"px";
+    if ( i!= 200  || j !== 200 && j != 150 ){
+        while (i < 700 ){
+            i = i + 100
+            document.getElementById("monster").style.left = i+"px";
+            document.getElementById("monster").style.right = i +"px";
+            return;
+        }
+    }else{
+            alert("Avoid the palm tree")
+        }
+    
 }
 function movel(){
-    i = i - 10
-    document.getElementById("demo").style.left = i+"px";
-    document.getElementById("demo").style.right = i +"px";
+    if ( i!= 400 || j !== 200 && j != 150){
+            while (i > 100){
+            i = i - 100
+            document.getElementById("monster").style.left = i+"px";
+            document.getElementById("monster").style.right = i +"px";
+            return;
+        }
+    }else{
+        alert("Avoid the palm tree")
+    }
 }
 function moveu(){
-    i = i - 10
-    document.getElementById("demo").style.top = i+"px";
-    document.getElementById("demo").style.bottom = i+"px";
+    if (i!=300 || j != 250){
+    while(j>100){
+    j = j - 50
+    document.getElementById("monster").style.top = j+"px";
+    document.getElementById("monster").style.bottom = j+"px";
+    return;
+    }
+}else{
+    alert("Avoid the palm tree")
+}
 }
 function moved(){
-    i = i + 10
-    document.getElementById("demo").style.top = i+"px";
-    document.getElementById("demo").style.bottom = i+"px";
+    if (i != 300 || j !=100 ){
+        while (j <500 ){
+        j = j + 50
+        document.getElementById("monster").style.top = j+"px";
+        document.getElementById("monster").style.bottom = j+"px";
+        return;
+        }
+    }else{
+        alert("Avoid the palm tree")
+    }
 }
 
