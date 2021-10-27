@@ -1,0 +1,35 @@
+#demo {
+  position: relative;
+}
+#buttons {
+  position: fixed;
+  bottom: 4cm;
+  background-color: rgb(15, 71, 17);
+  width: 100px;
+  border-radius: 50%;
+  border-style: solid;
+}
+#up {
+  border-radius: 50%;
+  position: relative;
+}
+#left {
+  border-radius: 50%;
+  left: 0cm;
+  position: relative;
+}
+#right {
+  border-radius: 50%;
+  left: 1cm;
+  position: relative;
+}
+#up {
+  border-radius: 50%;
+  left: 1cm;
+  position: relative;
+}
+#down {
+  border-radius: 50%;
+  left: 1cm;
+  position: relative;
+}
