@@ -4,6 +4,7 @@
   top: 100px;
   left: 100px;
   border-radius: 50%;
+  z-index: 2;
 }
 #buttons {
   position: relative;
@@ -13,6 +14,7 @@
   width: 100px;
   border-radius: 50%;
   border-style: solid;
+  background-image: linear-gradient(red, rgb(78, 74, 74));
 }
 #up {
   border-radius: 50%;
@@ -67,16 +69,16 @@
   top: 50px;
   height: 200px;
   width: 100px;
-  z-index: 9;
+  z-index: 1;
 }
 #coin {
   position: relative;
-
   box-sizing: border-box;
   height: 100px;
   width: 100px;
   float: left;
   top: 100px;
+  z-index: 1;
 }
 body {
   background-color: black;
@@ -86,4 +88,22 @@ body {
 }
 #description {
   color: white;
+}
+#palm2 {
+  position: relative;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  float: left;
+  top: 100px;
+  max-block-size: 100px;
+  z-index: 1;
+  left: 400px;
+}
+#start {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
 }

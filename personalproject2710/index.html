@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Moving object</title>
     <link rel="stylesheet" href="project1.css">
     <script src="jscript.js"></script>
@@ -17,12 +19,18 @@
     <div id="palm1"> 
         <img src="palm.png" height="100px" width="100px" onclick="demo()">
     </div>
+    
     <div id="coin">
         <img src="coin.png" height="100px" width="100px" alt="">
     </div>
+    <div id="palm2"> 
+        <img src="palm.png" height="100px" width="100px" onclick="demo()">
+    </div>
 </div>
-<p id="description">Use the Arrows below to get the money. Avoid the palm tree.<br>
-Each time you get the money the score increases by $100. If you try to touch the Palm tree, scrore is decreased by $100
+<p id="description">
+Click START! to begin <br>
+    Use the Arrows below to get the money. One of the bombs has no effect <strong>Which one?</strong> <br>
+Each time you get the money the score increases by $100. If you try to touch the <en><strong>wrong bomb</strong></en> , scrore is decreased by $100
 <hr>
 
 </p>
@@ -35,9 +43,9 @@ Each time you get the money the score increases by $100. If you try to touch the
 </div>
 <div id="startbutton">
     
-    <button id="startB" onclick="startG()">START!</button>
+    <button id="start" onclick="startG()"><strong>START!</strong> </button>
     <p>    </p>
-    <button id="coinrand" onclick="location.reload()">Reset</button> -->
+    <button id="reset" onclick="location.reload()">Reset</button> -->
 
 </div>
 <p id="score">

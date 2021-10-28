@@ -1,8 +1,9 @@
 var i = 100;
 var j = 50;
 var palmTop = 100;
-var plamLfet = 50;
+var plamLeft = 50;
 var palm1Top = 100;
+var palm1Left = 50;
 var score = 0;
 var selectArray = ["demo", "demo1"];
 function startG() {
@@ -12,6 +13,8 @@ function startG() {
   palmLeft = palmLeft * 100;
   document.getElementById("palm1").style.top = palmTop + "px";
   document.getElementById("palm1").style.left = palmLeft + "px";
+  document.getElementById("palm2").style.left = palmLeft + "px";
+  document.getElementById("palm2").style.left = palmLeft + "px";
   randomCoin();
 }
 function randomCoin() {
@@ -41,7 +44,7 @@ function mover() {
       return;
     }
   } else {
-    alert("Ouuups!!! The Palm is a trap! Score lowered by $100.");
+    alert("Ouuups!!! This Bomb is the BAD one! Score lowered by $100.");
     score = score - 100;
     document.getElementById("score").innerHTML = "SCORE: $" + score;
     startG();
@@ -61,7 +64,7 @@ function movel() {
       return;
     }
   } else {
-    alert("Ouuups!!! The Palm is a trap! Score lowered by $100.");
+    alert("Ouuups!!! This Bomb is the BAD one! Score lowered by $100.");
     score = score - 100;
     document.getElementById("score").innerHTML = "SCORE: $" + score;
     startG();
@@ -81,7 +84,7 @@ function moveu() {
       return;
     }
   } else {
-    alert("Ouuups!!! The Palm is a trap! Score lowered by $100.");
+    alert("Ouuups!!! This Bomb is the BAD one! Score lowered by $100.");
     score = score - 100;
     document.getElementById("score").innerHTML = "SCORE: $" + score;
     startG();
@@ -101,7 +104,7 @@ function moved() {
       return;
     }
   } else {
-    alert("Ouuups!!! The Palm is a trap! Score lowered by $100.");
+    alert("Ouuups!!! This Bomb is the BAD one! Score lowered by $100.");
     score = score - 100;
     document.getElementById("score").innerHTML = "SCORE: $" + score;
     startG();
