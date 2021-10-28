@@ -8,22 +8,24 @@
     <script src="jscript.js"></script>
 </head>
 <body>
+    
 <div id="square">
     <div id="monster">
         <img src="Monster1.png" width="100px">
     </div>
-    <div id="coin">
-        <img src="coin.png" height="100px" width="100px" alt="">
-    </div>
+    
     <div id="palm1"> 
         <img src="palm.png" height="100px" width="100px" onclick="demo()">
     </div>
-  
+    <div id="coin">
+        <img src="coin.png" height="100px" width="100px" alt="">
+    </div>
 </div>
 <div id="buttons">
     <button id="up" onclick="moveu()"> &uarr; </button><p></p>
     <button id="left" onclick="movel()"> &larr; </button>
-    <button id="right" onclick="mover()">&rarr; </button><p></p>
+    <button id="right" onclick="mover()">&rarr; </button>
+    <p></p>
     <button id="down" onclick="moved()"> &darr; </button>
 </div>
 <div id="startbutton">
@@ -33,6 +35,9 @@
     <button id="coinrand" onclick="randomCoin()">Rand coin</button>
 
 </div>
+<p id="score">
+    SCORE:
+</p>
 
 </body>
 </html>

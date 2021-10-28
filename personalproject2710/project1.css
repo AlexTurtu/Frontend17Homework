@@ -64,12 +64,13 @@
   top: 50px;
   height: 200px;
   width: 100px;
+  z-index: 9;
 }
 #coin {
   position: absolute;
   left: 400px;
-  top: 15;
+
   height: 100px;
   width: 100px;
-  background-color: blue;
+  z-index: 9;
 }

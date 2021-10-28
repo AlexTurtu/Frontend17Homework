@@ -20,18 +20,28 @@ function randomCoin(){
     coinLeft = Math.floor(Math.random()*7);
     coinTop = coinTop *50;
     coinLeft = coinLeft *100;
-    document.getElementById("coin").style.top = coinTop +"px";
     document.getElementById("coin").style.left = coinLeft+"px";
+    document.getElementById("coin").style.top = coinTop +"px";
+    
+}
+function checkMatch(){
+    if (coinTop == j  && coinLeft == i ) {
+        score = score +100;
+       randomCoin()
+      document.getElementById("score").innerHTML = score
+        
+    }
 }
 
 
 function mover() {
+    
     if ( i!= palmLeft  || j !== palmTop  + 150 && j != palmTop + 100 ){
         while (i < 700 ){
+            checkMatch()
             i = i + 100
             document.getElementById("monster").style.left = i+"px";
             document.getElementById("monster").style.right = i +"px";
-            
             return;
         }
     }else{
@@ -40,8 +50,10 @@ function mover() {
     
 }
 function movel(){
+    
     if ( i!= palmLeft +200  || j !== palmTop+100 && j != palmTop+150){
             while (i > 100){
+                checkMatch()
             i = i - 100
             document.getElementById("monster").style.left = i+"px";
             document.getElementById("monster").style.right = i +"px";
@@ -53,12 +65,12 @@ function movel(){
     }
 }
 function moveu(){
+    checkMatch()
     if (i!=palmLeft+100 || j != palmTop+200){
     while(j>100){
     j = j - 50
     document.getElementById("monster").style.top = j+"px";
     document.getElementById("monster").style.bottom = j+"px";
-  
     return;
     }
 }else{
@@ -66,12 +78,12 @@ function moveu(){
 }
 }
 function moved(){
+    checkMatch()
     if (i != palmLeft + 100 || j != palmTop+50 ){
         while (j <500 ){
         j = j + 50
         document.getElementById("monster").style.top = j+"px";
         document.getElementById("monster").style.bottom = j+"px";
-        
         return;
         }
     }else{
