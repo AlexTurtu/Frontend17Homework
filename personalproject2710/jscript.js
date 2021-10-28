@@ -2,8 +2,8 @@ var i = 100;
 var j = 50;
 var palmTop = 100 ;
 var plamLfet = 50;
-var coinTop = 100;
-var coinLeft = 50;
+var coinTop = 0;
+var coinLeft = 0;
 var score = 0;
 var selectArray = ["demo","demo1"];
 function startG(){
@@ -14,6 +14,7 @@ function startG(){
     palmLeft = palmLeft * 100;
     document.getElementById("palm1").style.top = palmTop +"px";
     document.getElementById("palm1").style.left = palmLeft+"px";
+    randomCoin()
 }
 function randomCoin(){
     coinTop = Math.floor(Math.random()*4);
@@ -28,17 +29,18 @@ function checkMatch(){
     if (coinTop == j  && coinLeft == i ) {
         score = score +100;
        randomCoin()
-      document.getElementById("score").innerHTML = score
+       startG()
+      document.getElementById("score").innerHTML = "SCORE: $" +score
         
     }
 }
 
 
 function mover() {
-    
+    checkMatch()
     if ( i!= palmLeft  || j !== palmTop  + 150 && j != palmTop + 100 ){
         while (i < 700 ){
-            checkMatch()
+            
             i = i + 100
             document.getElementById("monster").style.left = i+"px";
             document.getElementById("monster").style.right = i +"px";
@@ -50,10 +52,10 @@ function mover() {
     
 }
 function movel(){
-    
+    checkMatch()
     if ( i!= palmLeft +200  || j !== palmTop+100 && j != palmTop+150){
             while (i > 100){
-                checkMatch()
+                
             i = i - 100
             document.getElementById("monster").style.left = i+"px";
             document.getElementById("monster").style.right = i +"px";

@@ -25,7 +25,7 @@
 }
 #right {
   border-radius: 50%;
-  left: 1cm;
+  left: 45px;
   position: relative;
 }
 #up {
@@ -56,7 +56,9 @@
   border-right-color: rgb(23, 23, 165);
   border-bottom-color: rgb(51, 51, 182);
   background-color: cadetblue;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sand.jpg/1024px-Sand.jpg");
+  background-image: url("https://imagebee.org/nature/free-beach-sand/free-beach-sand-wallpaper-22206-22763-hd-wallpapers-1920x1200.jpg");
+  z-index: -1;
+  background-size: cover;
 }
 #palm1 {
   left: 200px;
@@ -72,5 +74,11 @@
 
   height: 100px;
   width: 100px;
-  z-index: 9;
+  float: inline-end;
+}
+body {
+  background-color: black;
+}
+#score {
+  color: yellow;
 }
