@@ -59,6 +59,7 @@
   background-image: url("https://imagebee.org/nature/free-beach-sand/free-beach-sand-wallpaper-22206-22763-hd-wallpapers-1920x1200.jpg");
   z-index: -1;
   background-size: cover;
+  border-image: linear-gradient(#93d5fc, #3809e4) 1;
 }
 #palm1 {
   left: 200px;
@@ -69,16 +70,20 @@
   z-index: 9;
 }
 #coin {
-  position: absolute;
-  left: 400px;
+  position: relative;
 
+  box-sizing: border-box;
   height: 100px;
   width: 100px;
-  float: inline-end;
+  float: left;
+  top: 100px;
 }
 body {
   background-color: black;
 }
 #score {
   color: yellow;
+}
+#description {
+  color: white;
 }
