@@ -62,4 +62,14 @@
   left: 200px;
   position: relative;
   top: 50px;
+  height: 200px;
+  width: 100px;
+}
+#coin {
+  position: absolute;
+  left: 400px;
+  top: 15;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
 }

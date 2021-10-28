@@ -1,12 +1,37 @@
 var i = 100;
 var j = 50;
+var palmTop = 100 ;
+var plamLfet = 50;
+var coinTop = 100;
+var coinLeft = 50;
+var score = 0;
 var selectArray = ["demo","demo1"];
+function startG(){
+   
+    palmTop = Math.floor(Math.random()*4);
+    palmLeft = Math.floor(Math.random()*7);
+    palmTop = palmTop * 100;
+    palmLeft = palmLeft * 100;
+    document.getElementById("palm1").style.top = palmTop +"px";
+    document.getElementById("palm1").style.left = palmLeft+"px";
+}
+function randomCoin(){
+    coinTop = Math.floor(Math.random()*4);
+    coinLeft = Math.floor(Math.random()*7);
+    coinTop = coinTop *50;
+    coinLeft = coinLeft *100;
+    document.getElementById("coin").style.top = coinTop +"px";
+    document.getElementById("coin").style.left = coinLeft+"px";
+}
+
+
 function mover() {
-    if ( i!= 200  || j !== 200 && j != 150 ){
+    if ( i!= palmLeft  || j !== palmTop  + 150 && j != palmTop + 100 ){
         while (i < 700 ){
             i = i + 100
             document.getElementById("monster").style.left = i+"px";
             document.getElementById("monster").style.right = i +"px";
+            
             return;
         }
     }else{
@@ -15,11 +40,12 @@ function mover() {
     
 }
 function movel(){
-    if ( i!= 400 || j !== 200 && j != 150){
+    if ( i!= palmLeft +200  || j !== palmTop+100 && j != palmTop+150){
             while (i > 100){
             i = i - 100
             document.getElementById("monster").style.left = i+"px";
             document.getElementById("monster").style.right = i +"px";
+            
             return;
         }
     }else{
@@ -27,11 +53,12 @@ function movel(){
     }
 }
 function moveu(){
-    if (i!=300 || j != 250){
+    if (i!=palmLeft+100 || j != palmTop+200){
     while(j>100){
     j = j - 50
     document.getElementById("monster").style.top = j+"px";
     document.getElementById("monster").style.bottom = j+"px";
+  
     return;
     }
 }else{
@@ -39,11 +66,12 @@ function moveu(){
 }
 }
 function moved(){
-    if (i != 300 || j !=100 ){
+    if (i != palmLeft + 100 || j != palmTop+50 ){
         while (j <500 ){
         j = j + 50
         document.getElementById("monster").style.top = j+"px";
         document.getElementById("monster").style.bottom = j+"px";
+        
         return;
         }
     }else{
