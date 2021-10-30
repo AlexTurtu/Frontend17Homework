@@ -31,3 +31,18 @@
 #blogname {
   float: left;
 }
+body {
+  position: absolute;
+  left: 25%;
+  float: left;
+  width: 800px;
+}
+.dateposted {
+  font-style: italic;
+}
+.topmenus {
+  font-size: 15px;
+}
+.topmenus:hover {
+  font-size: 20px;
+}
