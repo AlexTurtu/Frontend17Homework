@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Orbitron:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+}
+#maincontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 800px;
+}
+.secondmain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  margin: 20px;
+  align-items: center;
+}
+.picdiv {
+  height: 60%;
+}
+.indiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 10%;
+}
+.buttoncart {
+  font-family: mulish;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+}
+.buttonview {
+  font-family: mulish;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+}
+img {
+  height: 100%;
+}
+.wild {
+  font-size: 30px;
+  font-family: mulish;
+}
+.longdesc {
+  display: flex;
+
+  font-family: mulish;
+  width: 60%;
+}
+.heart {
+  margin-left: 20px;
+  color: grey;
+}
+.heartred > span {
+  margin-left: 20px;
+  color: red;
+}
+.starh {
+  height: 50px;
+}
