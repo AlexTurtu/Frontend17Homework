@@ -68,7 +68,7 @@
     margin: 1em;
     width: 7em;
     border-radius: 10px 10px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
+    box-shadow: 5px 5px 5px rgb(197, 186, 186);
     font-size: small;
     background-color: #29748d;
   }
@@ -105,10 +105,10 @@
   #img1 {
     border-radius: 300px;
     float: right;
-    margin-right: 10em;
-    animation-name: navmenu;
-    animation-duration: 5s;
-    border-right: 2px double var(--theColor);
+    width: 20em;
+    margin-top: 5vh;
+    padding-left: 10em;
+    border-right: 3px solid var(--theColor);
   }
   #homeimg {
     animation-name: navmenu;
@@ -244,8 +244,5 @@
     margin-left: 15vw;
   }
   #img1 {
-    width: 20em;
-
-    padding-left: 1em;
   }
 }
