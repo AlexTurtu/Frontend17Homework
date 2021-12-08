@@ -176,7 +176,7 @@
     border-bottom: 1px solid var(--theColor);
     padding-bottom: 5em;
     margin-bottom: 5em;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   #projects {
     border-bottom: 1px solid var(--theColor);
@@ -186,9 +186,9 @@
 
   #about1 {
     padding: 2vw;
-    padding-top: 5vh;
+
     border: 1px solid var(--theColor);
-    border-radius: 70px 5px 10px;
+    border-radius: 10px;
     width: auto;
     height: auto;
     margin-bottom: 2vh;
@@ -199,17 +199,15 @@
     align-self: flex-start;
     border: 1px solid var(--theColor);
     box-shadow: 10px 10px 10px var(--theColor);
-    border-radius: 100px 5px 10px;
+    border-radius: 10px;
     padding: 2vw;
-    padding-top: 7vh;
   }
   #about3 {
     align-self: flex-end;
     border: 1px solid var(--theColor);
     box-shadow: 10px 10px 10px var(--theColor);
-    border-radius: 100px 5px 10px;
+    border-radius: 10px;
     padding: 3vw;
-    padding-top: 7vh;
   }
   #projectList {
     display: flex;
@@ -242,6 +240,7 @@
   }
   #suceava {
     width: 50vw;
+    height: 20vh;
     margin-left: 15vw;
   }
   #img1 {
