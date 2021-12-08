@@ -8,9 +8,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
   }
-  #mob {
-    display: none;
-  }
 
   @keyframes navmenu {
     from {
@@ -115,8 +112,8 @@
     animation-duration: 5s;
     border-radius: 100px;
     opacity: 0.8;
-    width: 25vw;
-    margin: 4em;
+    width: 65vw;
+    margin: 1em;
     height: 100%;
   }
 
