@@ -1,6 +1,6 @@
 @media (min-width: 601px) {
   :root {
-    --theColor: rgb(16, 22, 100);
+    --theColor: #2f89a7;
   }
   * {
     margin: 0;
@@ -26,19 +26,17 @@
 
   #nav {
     top: 1em;
-
     animation-name: navmenu;
     animation-duration: 2s;
     position: fixed;
     width: 98%;
     left: 1%;
     display: flex;
-
     flex-direction: row;
     background-color: var(--theColor);
     z-index: 9999;
     height: 4em;
-    color: white;
+    color: #fff;
     border-radius: 5px;
     box-shadow: 10px 10px 10px var(--theColor);
     border: 1px double white;
@@ -63,36 +61,9 @@
     padding: 0.3em;
     margin: 2px;
   }
-  #homeButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--theColor);
-    margin: 1em;
-    width: 5em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-  }
-  #aboutButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--theColor);
-    margin: 1em;
-    width: 6em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-  }
-  #projectsButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--theColor);
-    margin: 1em;
-    width: 5em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-  }
+  #homeButton,
+  #aboutButton,
+  #projectsButton,
   #contactButton {
     display: flex;
     justify-content: center;
@@ -100,36 +71,14 @@
     background-color: var(--theColor);
     margin: 1em;
     width: 5em;
+    border: 0.5px solid white;
     border-radius: 10px 0px 10px;
     box-shadow: 5px 5px 5px whitesmoke;
   }
-  #homeButton:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    width: 7em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-  }
-  #aboutButton:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    width: 8em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-  }
-  #projectsButton:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    width: 7em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-  }
+
+  #homeButton:hover,
+  #aboutButton:hover,
+  #projectsButton:hover,
   #contactButton:hover {
     display: flex;
     justify-content: center;
@@ -139,6 +88,7 @@
     border-radius: 10px 0px 10px;
     box-shadow: 5px 5px 5px whitesmoke;
   }
+
   #maincontent {
     overflow-y: scroll;
     display: flex;
@@ -148,9 +98,7 @@
     top: 7em;
     padding: 1em;
     height: 45em;
-    width: 98%;
-
-    border-left: 3px double white;
+    /* width: 98%; */
   }
   #nav > div > a {
     text-decoration: none;
@@ -184,7 +132,7 @@
     animation-duration: 5s;
     border-radius: 100px;
     opacity: 0.8;
-    width: 45em;
+    width: 45vw;
     margin: 4em;
   }
   #home {
@@ -250,6 +198,7 @@
 
   #about1 {
     padding: 2vw;
+    padding-top: 5vh;
     border: 1px solid var(--theColor);
     border-radius: 70px 5px 10px;
     width: auto;
@@ -264,6 +213,7 @@
     box-shadow: 10px 10px 10px var(--theColor);
     border-radius: 100px 5px 10px;
     padding: 2vw;
+    padding-top: 5vh;
   }
   #about3 {
     align-self: flex-end;
@@ -271,9 +221,11 @@
     box-shadow: 10px 10px 10px var(--theColor);
     border-radius: 100px 5px 10px;
     padding: 2vw;
+    padding-top: 6vh;
   }
   #projectList {
     display: flex;
+
     justify-content: center;
     list-style: none;
     box-shadow: 10px 10px 10px var(--theColor);
@@ -300,6 +252,15 @@
       white,
       var(--theColor)
     );
+  }
+  #suceava {
+    width: 100%;
+    height: 100%;
+  }
+  #img1 {
+    width: 20em;
+
+    padding-left: 1em;
   }
   /* Media end min 600px */
 }
