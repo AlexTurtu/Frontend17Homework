@@ -1,15 +1,13 @@
 @media (min-width: 601px) {
   :root {
-    --theColor: #2f89a7;
+    --theColor: #2093b9;
   }
   * {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
-  }
-  #mob {
-    display: none;
+    color: white;
   }
 
   @keyframes navmenu {
@@ -22,6 +20,13 @@
       left: 1%;
       top: 1em;
     }
+  }
+  body {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    background-color: black;
+    color: white;
   }
 
   #nav {
@@ -80,25 +85,17 @@
   #aboutButton:hover,
   #projectsButton:hover,
   #contactButton:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    width: 7em;
-    border-radius: 10px 0px 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
+    transform: scale(1.1);
   }
 
   #maincontent {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: relative;
     top: 7em;
     padding: 1em;
     height: 45em;
-    /* width: 98%; */
   }
   #nav > div > a {
     text-decoration: none;
@@ -143,6 +140,7 @@
     border-bottom: 1px solid var(--theColor);
     padding-bottom: 5em;
     margin-bottom: 5em;
+    border-top: 1px solid var(--theColor);
   }
   #contact {
     display: flex;
@@ -243,15 +241,17 @@
     margin: 1em;
     font-size: 1em;
     border: 1px solid var(--theColor);
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 5px 5px 5px var(--theColor);
-    background-image: radial-gradient(
-      white,
-      white,
-      white,
-      white,
-      var(--theColor)
-    );
+    background-image: radial-gradient(white, white, white, var(--theColor));
+    height: 3em;
+    color: var(--theColor);
+  }
+  a {
+    color: var(--theColor);
+  }
+  li:hover {
+    transform: scale(0.9);
   }
   #suceava {
     width: 100%;

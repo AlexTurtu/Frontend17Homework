@@ -143,7 +143,7 @@
     justify-self: center;
     align-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 110%;
     font-size: 0.7em;
   }
   #email,
@@ -224,11 +224,12 @@
     list-style: none;
   }
   li {
+    display: flex;
     padding: 1em;
     margin: 1em;
     font-size: 1em;
     border: 1px solid var(--theColor);
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 5px 5px 5px var(--theColor);
     background-image: radial-gradient(
       white,
@@ -237,7 +238,9 @@
       white,
       var(--theColor)
     );
+    height: 7em;
   }
+
   #suceava {
     width: 50vw;
     height: 20vh;
