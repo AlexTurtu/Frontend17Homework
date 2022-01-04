@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  height: 400px;
+  width: 700px;
+}
+.imageConainer {
+  height: 100%;
+  width: 40%;
+  border: 1px solid black;
+  background-color: blue;
+}
+.fromsConainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  padding: 30px;
+  padding-left: 50px;
+  /* background-color: red; */
+}
+#gender {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70px;
+  flex-direction: column;
+  align-items: flex-end;
+  /* background-color: chocolate; */
+}
+.card {
+  /* background-color: chartreuse; */
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: baseline;
+}
+#gender > p {
+  align-self: flex-start;
+}
+#finalMessage {
+  width: 600px;
+  height: 30px;
+}
+
+#lastName,
+#firstName {
+  margin-top: 10px;
+  font-size: smaller;
+  width: 250px;
+}
+#submitBtn {
+  width: 20%;
+  height: 30px;
+  border-radius: 10%;
+  align-self: flex-end;
+  background-color: cornflowerblue;
+  color: white;
+  border-color: transparent;
+}
+input[type="text"] {
+  height: 20px;
+  color: darkgray;
+}
+input[type="text"]::after {
+  color: black;
+}

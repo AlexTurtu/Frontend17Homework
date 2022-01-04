@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="contactBox">
+      <span id="finalMessage"></span>
+      <div class="mainContainer">
+        <div class="fromsConainer">
+          <div class="card">
+            <div class="names">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                value="First Name"
+              />
+
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                value="Last Name"
+              />
+            </div>
+            <div id="gender">
+              <p>Gender:</p>
+              <label for="genderRadio1">M</label>
+
+              <input type="radio" name="genderRadio" id="genderRadio1" />
+              <label for="genderRadio2">F</label>
+              <input type="radio" name="genderRadio" id="genderRadio2" />
+            </div>
+            <textarea
+              name="mainMessage"
+              id="theMessage"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input id="submitBtn" type="submit" value="Submit" />
+        </div>
+        <div class="imageConainer"></div>
+      </div>
+    </div>
+    <!-- last line -->
+    <script src="app.js"></script>
+  </body>
+</html>
