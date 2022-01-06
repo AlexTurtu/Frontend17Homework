@@ -1,84 +1,96 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
 }
-.contactBox {
+.main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.mainContainer {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid black;
-  height: 400px;
+  margin: 30px;
+  height: 480px;
   width: 700px;
 }
-.imageConainer {
-  height: 100%;
-  width: 40%;
-  border: 1px solid black;
-  background-color: blue;
-}
-.fromsConainer {
+.final-message {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 60%;
-  padding: 30px;
-  padding-left: 50px;
-  /* background-color: red; */
-}
-#gender {
-  display: flex;
-  flex-wrap: wrap;
-  width: 70px;
-  flex-direction: column;
-  align-items: flex-end;
-  /* background-color: chocolate; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 690px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  background-color: rgba(172, 224, 172, 0.5);
+  color: green;
 }
 .card {
-  /* background-color: chartreuse; */
   display: flex;
+  flex-direction: row;
   height: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.image-right {
+  width: 300px;
+  height: 380px;
+  margin: 20px;
+  margin-left: 0px;
+  background-image: url("card.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.card-content {
+  display: flex;
   flex-direction: column;
+  width: 400px;
+  margin: 20px 50px;
+}
+.fist-last-name {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
   gap: 10px;
-  justify-content: baseline;
+  margin: 10px 0px;
 }
-#gender > p {
-  align-self: flex-start;
-}
-#finalMessage {
-  width: 600px;
-  height: 30px;
-}
+.gender {
+  display: flex;
+  flex-direction: column;
 
-#lastName,
-#firstName {
-  margin-top: 10px;
-  font-size: smaller;
-  width: 250px;
+  height: 60px;
 }
-#submitBtn {
-  width: 20%;
-  height: 30px;
-  border-radius: 10%;
+.gender-selctor {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+  width: 30px;
+  margin-right: 200px;
   align-self: flex-end;
-  background-color: cornflowerblue;
-  color: white;
-  border-color: transparent;
 }
 input[type="text"] {
-  height: 20px;
-  color: darkgray;
+  height: 2em;
+
+  border: 1px solid black;
 }
-input[type="text"]::after {
-  color: black;
+#submit-btn {
+  border: transparent;
+  border-radius: 5px;
+
+  width: 100px;
+  height: 30px;
+  align-self: flex-end;
+  margin-top: 30px;
+  background-color: rgb(130, 195, 235);
+  color: whitesmoke;
+}
+.hidden {
+  visibility: hidden;
+}
+#messageClose {
+  cursor: default;
+  font-weight: bolder;
+}
+#message-box {
+  border: 1px solid black;
 }

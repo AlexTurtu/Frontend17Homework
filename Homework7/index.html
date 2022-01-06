@@ -5,50 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <title>Document</title>
   </head>
   <body>
-    <div class="contactBox">
-      <span id="finalMessage"></span>
-      <div class="mainContainer">
-        <div class="fromsConainer">
-          <div class="card">
-            <div class="names">
-              <input
-                type="text"
-                name="firstName"
-                id="firstName"
-                value="First Name"
-              />
+    <dvi class="main-container">
+      <div class="final-message hidden">
+        <div class="finalMessageLeft"></div>
+        <div class="finalMessageClose"></div>
+      </div>
+      <!-- final green message
+      -->
+      <div class="card">
+        <div class="card-content">
+          <!-- left side content -->
 
-              <input
-                type="text"
-                name="lastName"
-                id="lastName"
-                value="Last Name"
-              />
-            </div>
-            <div id="gender">
-              <p>Gender:</p>
-              <label for="genderRadio1">M</label>
+          <div class="fist-last-name">
+            <!-- Names -->
 
-              <input type="radio" name="genderRadio" id="genderRadio1" />
-              <label for="genderRadio2">F</label>
-              <input type="radio" name="genderRadio" id="genderRadio2" />
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+              pattern="[A-Za-z]"
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="gender">
+            <!--Gender select-->
+            <div class="gender-title">Gender:</div>
+            <div class="gender-selctor">
+              <input type="radio" name="gender" id="gender-m" />
+              <label for="gender-m" required> M</label>
+
+              <input type="radio" name="gender" id="gender-f" />
+              <label for="gender-f" required> F</label>
             </div>
+          </div>
+          <div class="message">
             <textarea
-              name="mainMessage"
-              id="theMessage"
-              cols="30"
+              name="message"
+              id="message-box"
+              cols="40"
               rows="10"
+              placeholder="Your message here..."
             ></textarea>
           </div>
-          <input id="submitBtn" type="submit" value="Submit" />
+          <!--Message-->
+          <div class="submit"></div>
+          <!--Submit button-->
+          <button id="submit-btn">Submit</button>
         </div>
-        <div class="imageConainer"></div>
+        <div class="image-right"></div>
+        <!-- Roght side content / image-->
       </div>
-    </div>
-    <!-- last line -->
+    </dvi>
     <script src="app.js"></script>
   </body>
 </html>
