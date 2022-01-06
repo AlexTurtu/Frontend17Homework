@@ -8,6 +8,7 @@ var finalMessageLeft = document.querySelector(".finalMessageLeft");
 var finalMessageRight = document.querySelector(".finalMessageClose");
 var submintBtn = document.querySelector("#submit-btn");
 var messageBox = document.querySelector("#message-box");
+var genderTitle = document.querySelector(".gender-title");
 var gender;
 
 //functions
@@ -57,8 +58,10 @@ function checkGender() {
     } else if (genderF.checked) {
       gender = "female";
     }
+    genderTitle.style.color = "black";
     return true;
   } else {
+    genderTitle.style.color = "red";
     return false;
   }
 }
