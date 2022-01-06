@@ -8,6 +8,7 @@ var finalMessageLeft = document.querySelector(".finalMessageLeft");
 var finalMessageRight = document.querySelector(".finalMessageClose");
 var submintBtn = document.querySelector("#submit-btn");
 var messageBox = document.querySelector("#message-box");
+var gender;
 
 //functions
 
@@ -51,6 +52,11 @@ function sucessMessage() {
 function checkGender() {
   //check if gender is selected
   if (genderM.checked || genderF.checked) {
+    if (genderM.checked) {
+      gender = "male";
+    } else if (genderF.checked) {
+      gender = "female";
+    }
     return true;
   } else {
     return false;
@@ -75,6 +81,10 @@ function checkMessageBox() {
 
 function submitMessage() {
   // all checks before finish
+  console.log(firstName.value);
+  console.log(lastName.value);
+  console.log(messageBox.value);
+
   if (
     checkFisrtName() == true &&
     checkLastName() == true &&
@@ -84,6 +94,7 @@ function submitMessage() {
     sucessMessage();
     clearNames();
   }
+  console.log(gender);
 }
 
 firstName.addEventListener("blur", checkFisrtName);
