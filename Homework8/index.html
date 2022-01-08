@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Comment Box</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="commentsArea">
+        <input
+          type="email"
+          name=""
+          id="emailAddress"
+          placeholder="Your email address here..."
+        />
+        <div class="commBox">
+          <textarea
+            name="comment"
+            id="textBoxComment"
+            cols="70"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="addBtn">
+          <input
+            type="button"
+            value="Add comment"
+            id="addComment"
+            onclick="createCommnent();"
+          />
+        </div>
+      </div>
+      <div class="commentsShow">
+        <details>
+          <summary id="commentsSummary">Show Comments</summary>
+          <p id="commentID"></p>
+          <p id="commentEmail"></p>
+
+          <p id="commentParagraph"></p>
+        </details>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
