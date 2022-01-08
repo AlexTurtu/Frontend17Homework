@@ -56,7 +56,7 @@
 .gender {
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 10px;
   height: 60px;
 }
 .gender-selctor {

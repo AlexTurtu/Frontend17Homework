@@ -14,6 +14,7 @@
           type="email"
           name=""
           id="emailAddress"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
           placeholder="Your email address here..."
         />
         <div class="commBox">
@@ -33,15 +34,10 @@
           />
         </div>
       </div>
-      <div class="commentsShow">
-        <details>
-          <summary id="commentsSummary">Show Comments</summary>
-          <p id="commentID"></p>
-          <p id="commentEmail"></p>
-
-          <p id="commentParagraph"></p>
-        </details>
-      </div>
+      <p onclick="showHideComments()">
+        <span class="showHide">Show </span>/ Hide Comments
+      </p>
+      <div class="commentsShow"></div>
     </div>
 
     <script src="app.js"></script>
