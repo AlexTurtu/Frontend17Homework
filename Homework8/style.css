@@ -4,21 +4,34 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 10px;
+}
 .commentsArea {
   display: flex;
   flex-direction: column;
-  background-color: lightcyan;
+  background-color: rgba(224, 255, 255, 0.582);
   height: 100%;
   width: 600px;
-  border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
   margin: 30px;
   box-shadow: 0px 0px 15px black;
+
   overflow: hidden;
 }
 #textBoxComment {
   width: 100%;
+  height: 120px;
   resize: none;
 }
 .addBtn {
@@ -37,23 +50,24 @@
 #emailAddress {
   margin: 5px 0px;
   width: 300px;
+  height: 35px;
 }
 .divCommClass {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   padding: 5px;
   border: 1px solid lightgray;
   box-shadow: 0px 0px 5px grey;
 }
 .commentBody {
   height: 100%;
-  width: 800px;
+  padding: 10px;
+  width: 600px;
 }
 .commentEmail {
   margin: 20px 0px;
   width: 500px;
-  border-bottom: 3px solid light gray;
+  border: 3px solid ligtgray;
   font-size: small;
 }
 .commentCloseClass {
@@ -70,6 +84,7 @@ body > div > p {
   color: darkgray;
   cursor: pointer;
   margin: 10px;
+  text-decoration: underline;
 }
 .showHideBlack {
   color: black;

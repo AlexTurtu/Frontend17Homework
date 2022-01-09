@@ -14,8 +14,7 @@
           type="email"
           name=""
           id="emailAddress"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-          placeholder="Your email address here..."
+          placeholder="Please eneter your e-mail address"
         />
         <div class="commBox">
           <textarea
@@ -23,15 +22,11 @@
             id="textBoxComment"
             cols="70"
             rows="5"
+            placeholder="Your message here..."
           ></textarea>
         </div>
         <div class="addBtn">
-          <input
-            type="button"
-            value="Add comment"
-            id="addComment"
-            onclick="createCommnent();"
-          />
+          <input type="button" value="Add comment" id="addComment" />
         </div>
       </div>
       <p onclick="showHideComments()">
